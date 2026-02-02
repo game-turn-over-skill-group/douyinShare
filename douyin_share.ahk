@@ -8,7 +8,7 @@ F1::  ; 按F1键触发这个脚本（可以改成你喜欢的快捷键）
     currentWindow := WinGetTitle("A")  ; 获取当前激活窗口的标题
     if (!InStr(currentWindow, "抖音"))  ; 如果标题不含“抖音”
     {
-        Send "#6"  ; 按Win+6切换到抖音
+        Send "#5"  ; 按Win+5切换到抖音
         Sleep 200  ; 等待窗口切换
     }
 
@@ -20,8 +20,8 @@ F1::  ; 按F1键触发这个脚本（可以改成你喜欢的快捷键）
     Send " "
     Sleep 200
 
-    ; 4. 按Win+7切换到QQ
-    Send "#7"
+    ; 4. 按Win+6切换到QQ
+    Send "#6"
     Sleep 300
 
     ; 5. 按Ctrl+V粘贴链接 + 按Enter发送（你之前说“按Enter发送”，但实际需要先粘贴，所以补充Ctrl+V）
@@ -30,8 +30,8 @@ F1::  ; 按F1键触发这个脚本（可以改成你喜欢的快捷键）
     Send "{Enter}"
     Sleep 300
 
-    ; 6. 按Win+6切换回抖音
-    Send "#6"
+    ; 6. 按Win+5切换回抖音
+    Send "#5"
     Sleep 200
 
     ; 7. 按空格播放
